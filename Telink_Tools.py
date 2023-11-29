@@ -42,7 +42,7 @@ except ImportError:
           "Check the README for installation instructions." % (sys.VERSION, sys.executable))
     raise
 
-__version__ = "0.5 dev"
+__version__ = "0.1 dev Suxsem"
 
 PYTHON2 = sys.version_info[0] < 3  # True if on pre-Python 3
 
@@ -304,7 +304,7 @@ def dump_chip_info(_port):
 
 def main(custom_commandline=None):
 
-    parser = argparse.ArgumentParser(description='Telink_Tools.py v%s - Telink BLE Chip Bootloader Utility' % __version__)
+    parser = argparse.ArgumentParser(description='Telink_Tools.py v%s - Telink Zigbee serial flash tool - edit by Suxsem' % __version__)
 
     parser.add_argument('--port','-p', help='Serial port device', default='ttyUSB0')
 
