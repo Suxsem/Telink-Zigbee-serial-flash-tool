@@ -4,11 +4,11 @@
 
 Reliably read, write and erase flash memory for Telink Zigbee boards (eg. 8258) with just a USB-to-serial converter.
 
-![](/docs/intro.png)
+![](/docs/intro.PNG)
 
 ## Connections
 
-![](/docs/connections.png)
+![](/docs/connections.PNG)
 ![](/docs/connection_example.jpg)
 
 ## Usage
