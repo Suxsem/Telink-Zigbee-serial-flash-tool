@@ -22,7 +22,7 @@
 #include "tl_common.h"
 #include "drivers.h"
 
-#define BOOT_VERSION "S0.1" //must be 4 chars
+#define BOOT_VERSION "S0.2" //must be 4 chars
 
 volatile unsigned char uart_rx_flag=0;
 volatile unsigned char uart_dmairq_tx_cnt=0;
@@ -221,7 +221,7 @@ void app_uart_loop(void)
 					addr <<= 8;  addr += rec_buff.data[5];
 					addr <<= 8;  addr += rec_buff.data[6];
 					
-					if(((addr&0xFFF) == 0) && addr >= 0x4000)//擦除Flash
+					if((addr&0xFFF) == 0)//擦除Flash
 					{
 						for(int a = 0; a < rec_buff.data[7]; a++)
 						{

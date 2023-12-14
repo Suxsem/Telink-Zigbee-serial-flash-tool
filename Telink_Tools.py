@@ -42,7 +42,7 @@ except ImportError:
           "Check the README for installation instructions." % (sys.VERSION, sys.executable))
     raise
 
-__version__ = "0.1 dev Suxsem"
+__version__ = "0.2 dev Suxsem"
 
 PYTHON2 = sys.version_info[0] < 3  # True if on pre-Python 3
 

@@ -27,13 +27,16 @@ Clone or download the repository and execute Telink_Tools.py in a system with Py
 
     Telink_Tools.py -p COM3 read_flash 0 524288 dump.bin
 
-### Burn firmware at address 0
-
-    Telink_Tools.py -p COM3 write_flash 0 motionSensor_TS0202.bin
-
 ### Erase first 3 flash sectors (aka 12 KB. 1 sector = 4 KB)
 
     Telink_Tools.py -p COM3 erase_flash 0 3
+
+### Burn firmware at address 0
+
+> Please note that flash must be erased before write. You need to compute the number of minimum sectors to be erased remembering that 1 sector = 4 KB.
+	
+	Telink_Tools.py -p COM3 erase_flash 0 31	
+    Telink_Tools.py -p COM3 write_flash 0 motionSensor_TS0202.bin
 
 ## Flash layout
 
