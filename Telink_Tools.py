@@ -359,7 +359,7 @@ def main(custom_commandline=None):
         print("                                  ")
         print("              / ------470------SWS")
         print("Tx ----------+                    ")
-        print("              \ ------470------Rx ")
+        print("              \\ ------470------Rx ")
         print("Rx ----------------------------Tx ")
         print("RTS----------------------------RST")
 
